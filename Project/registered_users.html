@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registered Users Form</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <h2>Registered Users Form</h2>
+  <form action="query_results.php" method="POST">
+    <label for="query1">Q1. List the users with:</label>
+    <select id="weekday" name="weekday" required>
+      <option value="Monday">Monday</option>
+      <option value="Tuesday">Tuesday</option>
+      <option value="Wednesday">Wednesday</option>
+      <option value="Thursday">Thursday</option>
+      <option value="Friday">Friday</option>
+    </select>
+    <label for="query1">as preferred weekday.</label><br>
+    <input type="submit" value="List"><br>
+    <textarea id="query1Result" readonly></textarea><br><br>
+    
+    <label for="query2">Q2. List of graduate users not having scholarship:</label><br>
+    <input type="submit" name="query2" value="List"><br>
+    <textarea id="query2Result" readonly></textarea><br><br>
+    
+    <label for="query3">Q3. List of female undergraduate users not having scholarship:</label><br>
+    <input type="submit" name="query3" value="List"><br>
+    <textarea id="query3Result" readonly></textarea><br><br>
+  </form>
+</body>
+</html>
